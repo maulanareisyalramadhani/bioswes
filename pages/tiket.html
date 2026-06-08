@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tiket Bioskop</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<h1>Tiket Anda</h1>
+
+<div class="ticket">
+
+<h2>BIOSWES CINEMA</h2>
+
+<p>Film : Fast & Furious</p>
+<p>Studio : 1</p>
+<p>Jadwal : <span id="jadwal"></span></p>
+<p>Kursi : <span id="kursi"></span></p>
+<p>Total Harga : Rp <span id="totalHarga"></span></p>
+
+<p>Status : BERHASIL</p>
+
+<script>
+
+document.getElementById("jadwal").innerText =
+localStorage.getItem("jadwalFilm");
+
+document.getElementById("kursi").innerText =
+localStorage.getItem("kursiDipilih");
+
+document.getElementById("totalHarga").innerText =
+localStorage.getItem("totalHarga");
+
+</script>
+
+</div>
+
+<a href="../index.html">
+<button>Kembali ke Home</button>
+</a>
+
+</body>
+</html>

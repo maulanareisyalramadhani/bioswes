@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilih Jadwal</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>BIOSWES</h1>
+
+<nav>
+<a href="../index.html">Home</a>
+</nav>
+</header>
+
+<section class="jadwal">
+
+<h2>Pilih Jadwal Tayang</h2>
+
+<div class="jadwal-container">
+
+<button class="jadwal-btn" onclick="pilihJadwal('10:00')">10:00</button>
+<button class="jadwal-btn" onclick="pilihJadwal('13:00')">13:00</button>
+<button class="jadwal-btn" onclick="pilihJadwal('16:00')">16:00</button>
+<button class="jadwal-btn" onclick="pilihJadwal('19:00')">19:00</button>
+<button class="jadwal-btn" onclick="pilihJadwal('21:00')">21:00</button>
+
+<script>
+function pilihJadwal(jam){
+
+localStorage.setItem("jadwalFilm", jam);
+
+window.location.href = "pilih-kursi.html";
+
+}
+</script>
+
+</div>
+
+</section>
+
+</body>
+</html>
