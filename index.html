@@ -1,85 +1,68 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BIOSWES - Tiket Bioskop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            background:linear-gradient(135deg,#0f172a,#1e293b);
+            color:white;
+            text-align:center;
+        }
+
+        .container{
+            padding:40px;
+        }
+
+        h1{
+            font-size:4rem;
+            margin-bottom:15px;
+            letter-spacing:3px;
+        }
+
+        p{
+            font-size:1.2rem;
+            color:#cbd5e1;
+            margin-bottom:20px;
+        }
+
+        .loader{
+            width:60px;
+            height:60px;
+            border:5px solid rgba(255,255,255,0.2);
+            border-top:5px solid #38bdf8;
+            border-radius:50%;
+            margin:20px auto;
+            animation:spin 1s linear infinite;
+        }
+
+        @keyframes spin{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<header>
-<h1>BIOSWES</h1>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Now Playing</a>
-<a href="#">Coming Soon</a>
-<a href="pages/login.html">Login</a>
-</nav>
-</header>
-
-<!-- BANNER -->
-<section class="banner">
-<h2>Selamat Datang di BIOSWES</h2>
-<p>Pesan tiket bioskop online dengan mudah</p>
-</section>
-
-<!-- DAFTAR FILM -->
-<section class="movies">
-
-<h2>Now Playing</h2>
-
-<div class="movie-container">
-
-<div class="movie-card">
-<img src="images/engem1.jpg">
-<h3>Avengers Endgame</h3>
-<a href="pages/detail-film.html">
-<button>Pesan Tiket</button>
-</a>
-</div>
-
-<div class="movie-card">
-<img src="images/kkn2.jpg">
-<h3>KKN di Desa Penari</h3>
-<a href="pages/detail-kkn.html">
-<button>Pesan Tiket</button>
-</a>
-</div>
-
-<div class="movie-card">
-<img src="images/banter3.jpg">
-<h3>Fast & Furious</h3>
-<a href="pages/detail-fastfurious.html">
-<button>Pesan Tiket</button>
-</a>
-</div> 
-
-<div class="movie-card">
-<img src="images/jumbo.jpg">
-<h3>JUMBO</h3>
-<a href="pages/detail-jumbo.html">
-<button>Pesan Tiket</button>
-</a>
-</div>
-
-<div class="movie-card">
-<img src="images/alas.jpg">
-<h3>Alas Roban</h3>
-<a href="pages/detail-alas.html">
-<button>Pesan Tiket</button>
-</a>
-</div>
-
-</div>
-
-</section>
+    <div class="container">
+        <h1>COMING SOON</h1>
+        <p>Website sedang dalam tahap pengembangan.</p>
+        <div class="loader"></div>
+    </div>
 
 </body>
 </html>
